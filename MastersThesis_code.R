@@ -71,7 +71,7 @@ maxs <- max(max(toevals_0p$t_vals), max(toevals_10p$t_vals), max(toevals_50p$t_v
 
 
 plot(toevals_0p$syn_vals, toevals_0p$t_vals, type = "l", ylim = c(mins, maxs), xlab = "Synergy Level (1 - a)", ylab = "Toehold Fraction (t)",  col = "darkred", main = "Merger of 2 out of 3 firms")
-legend("topright", legend = c("p = 100% (Fully Informed)", "p = 90%", "p = 50%", "p = 10%", "p = 0% (Silent)"),col = c("black", "magenta", "purple", "blue", "darkred"), lty = 1)
+legend("topright", legend = c("p = 100% (Fully Informed Takeover)", "p = 90%", "p = 50%", "p = 10%", "p = 0% (Silent Takeover)"),col = c("black", "magenta", "purple", "blue", "darkred"), lty = 1)
 lines(toevals_10p$syn_vals, toevals_10p$t_vals, col = "blue")
 lines(toevals_50p$syn_vals, toevals_50p$t_vals, col = "purple")
 lines(toevals_90p$syn_vals, toevals_90p$t_vals, col = "magenta")
